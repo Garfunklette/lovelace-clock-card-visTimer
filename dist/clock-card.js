@@ -170,6 +170,34 @@ class ClockCard extends HTMLElement {
                 ctx.stroke();
                 ctx.rotate(-pos);
             }
+
+            //-garf
+//set start time (opt)
+//set end time (opt)
+//set duration (opt)
+//calculate start, end, duration (requires exclusively 2 out of 3)
+//validate if all 3 set
+//draw wedge
+//decrement wedge
+//show alarm
+//set traffic lights
+//reset to current time start
+            function getTimeInput() {
+                
+            }
+
+
+
+            
+            function drawWedge(ctx,start,end,color="blue") {
+                ctx.beginPath();
+                ctx.arc(150, 150, 125, arcStart/100*2*Math.PI, arcEnd/100*2 * Math.PI);
+                ctx.lineTo(150,150)
+                ctx.closePath();
+                ctx.fillStyle = color;
+                ctx.fill();
+            }
+            ///-garf
         }
     }
 
